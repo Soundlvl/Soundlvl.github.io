@@ -1,0 +1,152 @@
+/* Header and Headshot Styles */
+header {
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+}
+
+#headshot-container {
+    margin: 0 auto;
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    overflow: hidden;
+    border-radius: 50%; /* Circular Shape */
+    border: 3px solid #fff; /* White border */
+}
+
+#headshot {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #303030;
+}
+
+/* Header */
+header {
+    background-color: #aa7daf;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background: #86638a;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffffde;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.filter-btn {
+    background-color: #aa7daf;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.filter-btn:hover {
+    background-color: #927c9f;
+}
+/* Main Content */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 20px;
+    background: #ffffffde;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #aa7daf;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 30px;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio-item {
+    width: 300px;
+    height: 300px;
+    background-color: #303030;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+/*.portfolio-item-content {
+    text-align: bottom;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 5px;
+    margin: 10px;*
+} */
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 150px;
+    }
+}
