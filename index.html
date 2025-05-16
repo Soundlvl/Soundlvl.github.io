@@ -1,31 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="style.css">
-
-<header>
-    <title></title>
-    <h1>Kevin McSharry</h1>
-    <div id="headshot-container">
-        <img src="Images/Headshot.png" alt="Kevin McSharry Headshot" id="headshot">
-    </div>
-    <h1 id="greeting">Thanks for stopping by</h1>
-</header>
- 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin McSharry - Project Manager | Creative and Post Producer | Designer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-        <nav>
-            <button class="filter-btn" data-category="entertainment">Producer</button>
-           <!-- <button class="filter-btn" data-category="art">Artist</button> -->
-            <button class="filter-btn" data-category="design">Designer</button>
-            <button class="filter-btn" data-category="modeling">Maker</button>
-            <button class="filter-btn" data-category="games">Tabletop Gamer</button>
-            
-        </nav>
-        <div class="portfolio">
-            <!-- Portfolio items will be populated by JavaScript -->
-        </div>
-        <script src="script.js"></script>
+    <div class="container">
+        <header>
+            <a href="index.html" class="logo">
+                <div class="logo-circle"></div>
+                <h1>Kevin McSharry <span class="job-title">Project Manager | Producer | Designer</span></h1>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="hero">
+            <div class="profile-image">
+                <img src="Images/Headshot.jpg" alt="Kevin McSharry">
+            </div>
+            <div class="hero-content">
+                <h2>Hello</h2>
+                <h3>A Bit About Me</h3>
+                <p>I'm a versatile professional with expertise spanning project management, business analysis, producing, and design. I combine analytical thinking with creative vision to deliver exceptional results across industries. With a passion for leading teams and driving projects to success, I help organizations transform ideas into impactful realities.</p>
+                <div class="buttons">
+                    <a href="resume.html" class="btn btn-resume">Resume</a>
+                    <a href="projects.html" class="btn btn-projects">Projects</a>
+                    <a href="contact.html" class="btn btn-contact">Contact</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    
     <footer>
-        <p>Contact me at: <a href="mailto:Kmcsharry+Portfolio@gmail.com">Kmcsharry+Portfolio@gmail.com</a></p>
+    <div class="footer-content">
+        <div class="contact-group">
+            <h4>Phone</h4>
+            <p>(508) 259-5862</p>
+        </div>
+        
+        <div class="contact-group">
+            <h4>Email</h4>
+            <p>Hello@KevinMcSharry.com</p>
+        </div>
+        
+        <div class="social">
+            <h4>My Work</h4>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/kevinmcsharry" target="_blank" class="linkedin">in</a>
+                <a href="https://www.imdb.com/name/nm6343339/" target="_blank" class="imdb">IMDb</a>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>© 2025 Kevin McSharry</p>
+        </div>
+    </div>
+</footer>
 
+    <script src="scripts.js"></script>
 </body>
 </html>
