@@ -30,13 +30,7 @@ The website is organized into the following files:
 ## Setup Instructions
 1. Clone this repository to your local machine or web server
 2. Ensure all files maintain their relative structure
-3. Replace placeholder images in the `Images` folder with your actual images:
-   - `profile.png` - Your profile picture
-   - `OPGC.png` - Obscure Polearm Gaming Co. image
-   - `crypt.png` - Crypt of the First Homunculus image
-   - `Gridfinity.png` - Gridfinity Storage Solutions image
-   - `3DModeling.png` - Parametric CAD image
-   - `mpaa_green_card.png` - Motion Picture Trailers image
+3. Replace images in the `Images` folder with your actual images
 4. Update the resume Google Drive link in resume.html with your own document ID
 5. Test the website locally before deploying
 
