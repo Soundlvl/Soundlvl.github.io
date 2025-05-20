@@ -27,14 +27,20 @@
     --primary: #303030;
     --primary-light: #383838;
     --primary-dark: #2a2a2a;
-    --color1: #bc8ec1;  /* Purple accent */ 
+    
+    --color1: #bc8ec1;  /* Purple accent */
+    --color1-dark: #8f5e94; 
     --color2: #E9BC4F;  /* Yellow accent */
-    --color3: #2a8085;  /* Teal accent */
+    --color2-dark: #cd9c33; 
+    --color3: #56B9BF;  /* Teal accent */
+    --color3-dark: #2a8085; 
+
     --dark-gray: #333333;
-    --light-gray: #F5F5F5;
+    --light-gray: #4f4f4f;
+
     --text-color: #ffffff;
-    --text-muted: #bbbbbb;  
-    --text-light: #eeeeee;  
+    --text-muted: #d1d1d1;  
+
     
     /* Shadow effects */
     --shadow-color: rgba(0, 0, 0, 0.4);
@@ -44,17 +50,16 @@
 
     
     /* Social media brand colors */
-    --linkedin-color: #0281c5;
+    --linkedin-color: #009cef;
     --imdb-color: #F5C518;
     
     /* Layout measurements */
-    --header-height: 80px;
     --container-max-width: 1600px;
     --content-max-width: 800px;
     --content-max-height: 1100px;
     --text-max-width: 800px;
     --card-max-width: 500px;
-    --container-padding: 50px 20px;
+    --container-padding: 20px 20px;
     
     /* Hover effects */
     --hover-color: var(--color1);
@@ -423,30 +428,30 @@ nav a.active::after {
 }
 
 .btn-resume {
-    background-color: var(--color1);
+    background-color: var(--color1-dark);
 }
 
 .btn-resume:hover {
-    background-color: #8a5e8d; /* Darker purple */
-    color: #f8e6ff; /* Light lavender */
+    background-color: #75447b;/* Even darker for hover state */
+    color: var(--text-color);
 }
 
 .btn-projects {
-    background-color: var(--color2);
+    background-color: var(--color2-dark); 
 }
 
 .btn-projects:hover {
-    background-color: #c99a30; /* Darker yellow */
-    color: #4a3600; /* Dark brown */
+    background-color: #8a6b20; /* Even darker for hover state */
+    color: var(--text-color);
 }
 
 .btn-contact {
-    background-color: var(--color3);
+    background-color: var(--color3-dark); 
 }
 
 .btn-contact:hover {
-    background-color: #3d9198; /* Darker teal */
-    color: #e0ffff; /* Light cyan */
+    background-color: #216265; /* Even darker for hover state */
+    color: var(--text-color);
 }
 
 /*--------------------------------------------------------------
@@ -460,7 +465,7 @@ nav a.active::after {
 .filter-label {
     font-size: 18px;
     margin-bottom: 15px;
-    color: var(--hover-color);
+    color: var(--color1);
     font-weight: 600;
 }
 
@@ -477,7 +482,7 @@ nav a.active::after {
     background-color: var(--primary-light);
     border: none;
     border-radius: 20px;
-    color: var(--text-color); /* Changed from var(--text-light) to white for better contrast */
+    color: var(--text-color);
     font-size: 14px;
     cursor: pointer;
     transition: all 0.3s;
@@ -493,8 +498,9 @@ nav a.active::after {
 }
 
 .filter-btn.active {
-    background-color: var(--hover-color);
+    background-color: var(--color1-dark); /* Using darker purple for better contrast with white text */
     color: white;
+    font-weight: 600; /* Added weight for better visibility */
 }
 
 /*--------------------------------------------------------------
@@ -567,11 +573,11 @@ nav a.active::after {
 .project-content h3 {
     font-size: 22px;
     margin-bottom: 10px;
-    color: var(--hover-color);
+    color: var(--color1);
 }
 
 .project-content p {
-    color: var(--text-light);
+    color: var(--text-color);
     margin-bottom: 15px;
     font-size: 15px;
     flex: 1;
@@ -588,14 +594,14 @@ nav a.active::after {
     font-size: 12px;
     padding: 5px 10px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.15); /* Increased opacity from 0.1 to 0.15 */
-    color: var(--text-light);
+    background-color: var(--light-gray);
+    color: var(--text-color);
 }
 
 .project-link {
     display: inline-block;
     font-size: 14px;
-    color: var(--color3);
+    color: var(--color3); 
     text-decoration: none;
     transition: color 0.3s;
     font-weight: 600;
@@ -603,7 +609,8 @@ nav a.active::after {
 }
 
 .project-link:hover {
-    color: var(--hover-color);
+    color: var(--color1);
+    text-decoration: underline; /* Added for additional visual cue */
 }
 
 .project-link:focus {
@@ -651,20 +658,19 @@ nav a.active::after {
 .resume-btn {
     display: inline-block;
     padding: 12px 30px;
-    background-color: #2a8085; /* Darkened teal for better contrast */
-    color: white;
     border: none;
     border-radius: 30px;
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .resume-btn:hover {
     transform: var(--hover-transform);
     box-shadow: 0 5px 15px rgba(125, 206, 213, 0.3);
+    color: var(--color2);
 }
 
 .resume-btn:focus {
@@ -673,7 +679,7 @@ nav a.active::after {
 }
 
 .resume-btn.download {
-    background-color: var(--color3);
+    background-color: var(--color3-dark);
 }
 
 /* Credentials section */
@@ -681,7 +687,7 @@ nav a.active::after {
     margin: 30px auto;
     max-width: var(--content-max-width);
     text-align: center;
-    background-color: var(--primary-light);
+    background-color: var(--primary);
     padding: 40px;
     border-radius: var(--border-radius-standard);
     box-shadow: 0 15px 30px var(--shadow-color);
@@ -690,14 +696,14 @@ nav a.active::after {
 .credentials-section h3 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: var(--hover-color);
-    border-bottom: 2px solid var(--hover-color);
+    color: var(--color1);
+    border-bottom: 2px solid var(--color1);
     padding-bottom: 10px;
     display: inline-block;
 }
 
 .credentials-section p {
-    color: var(--text-light);
+    color: var(--text-color);
     margin-bottom: 30px;
     max-width: var(--text-max-width);
     margin-left: auto;
@@ -754,7 +760,7 @@ nav a.active::after {
     flex: 1;
     min-width: 300px;
     max-width: var(--card-max-width);
-    background-color: var(--primary-light);
+    background-color: var(--primary);
     padding: 40px;
     border-radius: var(--border-radius-standard);
     box-shadow: 0 15px 30px var(--shadow-color);
@@ -769,8 +775,8 @@ nav a.active::after {
 .contact-info h3 {
     font-size: 24px;
     margin-bottom: 30px;
-    color: var(--hover-color);
-    border-bottom: 2px solid var(--hover-color);
+    color: var(--color1);
+    border-bottom: 2px solid var(--color1);
     padding-bottom: 10px;
 }
 
@@ -792,10 +798,9 @@ nav a.active::after {
     justify-content: center;
     width: 30px;
     height: 30px;
-    background-color: var(--hover-color);
+    background-color: var(--color1-dark); 
     border-radius: var(--border-radius-round);
-    color: white;
-    transition: transform 0.3s, background-color 0.3s;
+    color: var(--text-color)
 }
 
 .contact-item:hover h4 span {
@@ -804,7 +809,7 @@ nav a.active::after {
 
 .contact-item p,
 .contact-item a {
-    color: var(--text-light);
+    color: var(--text-muted);
     font-size: 16px;
     text-decoration: none;
     transition: color 0.3s;
@@ -827,7 +832,7 @@ nav a.active::after {
     flex: 1;
     min-width: 300px;
     max-width: var(--card-max-width);
-    background-color: var(--primary-light);
+    background-color: var(--primary);
     padding: 40px;
     border-radius: var(--border-radius-standard);
     box-shadow: 0 15px 30px var(--shadow-color);
@@ -848,7 +853,7 @@ nav a.active::after {
 }
 
 .consulting-info p {
-    color: var(--text-light);
+    color: var(--text-color);
     margin-bottom: 20px;
     line-height: 1.6;
 }
@@ -862,7 +867,7 @@ nav a.active::after {
 }
 
 .service-item h4 {
-    color: var(--hover-color);
+    color: var(--color1);
     margin-bottom: 8px;
     font-size: 18px;
 }
@@ -886,10 +891,11 @@ nav a.active::after {
     color: var(--color3);
     text-decoration: none;
     transition: color 0.3s;
+    font-weight: 600;
 }
 
 .rate-info a:hover {
-    color: var(--hover-color);
+    color: var(--color2);
 }
 
 .rate-info a:focus {
@@ -904,8 +910,7 @@ footer {
     width: 100%;
     border-top: 1px solid #444;
     padding: 50px 20px;
-    /* Removed background-color to make footer transparent */
-    position: relative; /* Ensures the border stays visible */
+    position: relative;
 }
 
 .footer-content {
@@ -931,7 +936,7 @@ footer {
 }
 
 .contact-group a:hover {
-    color: var(--hover-color);
+    color: var(--color1);
 }
 
 .contact-group a:focus {
@@ -959,7 +964,7 @@ footer {
 }
 
 .social-icons a:hover {
-    color: var(--hover-color);
+    color: var(--color1);
 }
 
 .social-icons a:focus {
@@ -1165,7 +1170,7 @@ footer {
     position: absolute;
     top: -50px;
     left: 10px;
-    background: var(--color1);
+    background: var(--color1-dark); /* Using darker purple for better contrast */
     color: white;
     padding: 8px 15px;
     border-radius: 4px;

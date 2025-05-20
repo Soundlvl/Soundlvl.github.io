@@ -61,9 +61,12 @@ The site uses CSS variables for easy customization. In `style.css`, modify the `
 ```css
 :root {
     --primary: #303030;
-    --color1: #bc8ec1;  /* Purple accent */ 
-    --color2: #E9BC4F;  /* Yellow accent */
-    --color3: #2a8085;  /* Teal accent */
+    --color1: #bc8ec1;  /* Purple accent for text*/
+    --color1-dark: #8f5e94; /* Purple accent for backgrounds*/
+    --color2: #E9BC4F;  /* Yellow accent for text */
+    --color2-dark: #cd9c33; /* Yellow accent for backgrounds */
+    --color3: #56B9BF;  /* Teal accent for text */
+    --color3-dark: #2a8085; /* Teal accent for backgrounds */
     --text-color: #ffffff;
     /* Other variables */
 }
