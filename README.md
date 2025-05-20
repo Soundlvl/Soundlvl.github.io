@@ -1,6 +1,6 @@
 # Kevin McSharry Portfolio Website
 
-![Portfolio Screenshot](Images/screenshot.png)
+![Portfolio Screenshot](Images/Screenshot.png)
 
 ## Overview
 
@@ -167,3 +167,13 @@ The website is tested and compatible with:
 ## License
 
 This project is available for use as a template for your own portfolio.
+<<<<<<< HEAD
+=======
+
+## Contact
+
+For inquiries about this website or to discuss your own web project, contact:
+
+- Email: Hello@KevinMcSharry.com
+- LinkedIn: [linkedin.com/in/kevinmcsharry](https://www.linkedin.com/in/kevinmcsharry)
+>>>>>>> 7ad0eb1089c08cc6e5b8aa1187e29ac0ee47e283
