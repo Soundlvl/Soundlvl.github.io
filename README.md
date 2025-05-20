@@ -13,10 +13,9 @@ A modern, responsive, and accessible portfolio website for Kevin McSharry, showc
 
 - **Responsive Design** - Optimized for all device sizes from mobile to desktop
 - **Interactive Project Filtering** - Dynamic filtering system for portfolio projects
-- **Accessibility Compliant** - WCAG standards with keyboard navigation and screen reader support
+- **Accessibility Compliant** - WCAG 2.11 AA compliant with keyboard navigation, screen reader support, and sufficient contrast throughout
 - **Animated UI Elements** - Subtle animations enhance user experience
 - **Optimized Performance** - Fast loading with image optimizations and efficient code
-- **Print-Friendly** - Special styles for printing pages
 - **SEO Ready** - Structured data and semantic markup for better search engine visibility
 
 ## Technology Stack
@@ -48,9 +47,8 @@ root/
     ├── Trailers.webp
     ├── IMDB.png
     ├── Linkedin.png
-    ├── github.png
+    ├── Github.png
     ├── pmp.png             # Certification badge
-    ├── favicon.png         # Website favicon
     └── screenshot.png      # Website screenshot for README
 ```
 
@@ -62,11 +60,11 @@ The site uses CSS variables for easy customization. In `style.css`, modify the `
 
 ```css
 :root {
-    --primary: #303030;         /* Main background color */
-    --color1: #aa7daf;          /* Purple accent */
-    --color2: #E9BC4F;          /* Yellow accent */
-    --color3: #56B9BF;          /* Teal accent */
-    --text-color: #ffffff;      /* Main text color */
+    --primary: #303030;
+    --color1: #bc8ec1;  /* Purple accent */ 
+    --color2: #E9BC4F;  /* Yellow accent */
+    --color3: #2a8085;  /* Teal accent */
+    --text-color: #ffffff;
     /* Other variables */
 }
 ```

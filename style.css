@@ -27,23 +27,24 @@
     --primary: #303030;
     --primary-light: #383838;
     --primary-dark: #2a2a2a;
-    --color1: #aa7daf;  /* Purple accent */
+    --color1: #bc8ec1;  /* Purple accent */ 
     --color2: #E9BC4F;  /* Yellow accent */
-    --color3: #56B9BF;  /* Teal accent */
+    --color3: #2a8085;  /* Teal accent */
     --dark-gray: #333333;
     --light-gray: #F5F5F5;
     --text-color: #ffffff;
-    --text-muted: #aaa;
-    --text-light: #ddd;
+    --text-muted: #bbbbbb;  
+    --text-light: #eeeeee;  
     
     /* Shadow effects */
     --shadow-color: rgba(0, 0, 0, 0.4);
     --shadow-light: rgba(0, 0, 0, 0.2);
     --shadow-dark: rgba(0, 0, 0, 0.3);
     --shadow-hover: rgba(0, 0, 0, 0.5);
+
     
     /* Social media brand colors */
-    --linkedin-color: #0077B5;
+    --linkedin-color: #0281c5;
     --imdb-color: #F5C518;
     
     /* Layout measurements */
@@ -225,7 +226,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-    margin-top: 15px; /* Reduced from 30px to 15px */
+    margin-top: 15px; 
     border-bottom: 1px solid #444;
 }
 
@@ -363,7 +364,7 @@ nav a.active::after {
     font-size: 20px;
     margin-bottom: 15px;
     font-weight: 600;
-    color: var(--hover-color);
+    color: var(--color1);
 }
 
 .hero-content p {
@@ -476,7 +477,7 @@ nav a.active::after {
     background-color: var(--primary-light);
     border: none;
     border-radius: 20px;
-    color: var(--text-light);
+    color: var(--text-color); /* Changed from var(--text-light) to white for better contrast */
     font-size: 14px;
     cursor: pointer;
     transition: all 0.3s;
@@ -587,7 +588,7 @@ nav a.active::after {
     font-size: 12px;
     padding: 5px 10px;
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.15); /* Increased opacity from 0.1 to 0.15 */
     color: var(--text-light);
 }
 
@@ -650,7 +651,7 @@ nav a.active::after {
 .resume-btn {
     display: inline-block;
     padding: 12px 30px;
-    background-color: var(--color3);
+    background-color: #2a8085; /* Darkened teal for better contrast */
     color: white;
     border: none;
     border-radius: 30px;
@@ -658,7 +659,7 @@ nav a.active::after {
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;;
 }
 
 .resume-btn:hover {
