@@ -3,202 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kevin McSharry's project portfolio - Showcasing work in project management, design, post-production, and creative direction.">
+    <meta name="keywords" content="Kevin McSharry, Portfolio, Projects, Tabletop Gaming, 3D Modeling, Post-production, Project Management">
+    
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="Kevin McSharry - Projects">
+    <meta property="og:description" content="Explore Kevin McSharry's diverse project portfolio spanning graphic design, 3D modeling, post-production, and tabletop gaming.">
+    <meta property="og:image" content="Images/OPGC.png">
+    <meta property="og:url" content="https://kevinmcsharry.com/projects.html">
+    
     <title>Kevin McSharry - Projects</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://kevinmcsharry.com/projects.html">
+    <link rel="icon" type="image/png" href="Images/favicon.png">
 </head>
 <body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Animated Background Elements -->
+    <div class="background-elements" aria-hidden="true">
+        <div class="bg-shape shape1"></div>
+        <div class="bg-shape shape2"></div>
+        <div class="bg-shape shape3"></div>
+        <div class="bg-shape shape4"></div>
+        <div class="bg-shape shape5"></div>
+    </div>
+
     <div class="container">
+        <!-- Header with navigation -->
         <header>
-            <a href="index.html" class="logo">
-                <div class="logo-circle"></div>
+            <a href="index.html" class="logo" aria-label="Kevin McSharry Home">
+                <div class="logo-circle" aria-hidden="true"></div>
                 <h1>Kevin McSharry <span class="job-title">Project Manager | Producer | Designer</span></h1>
             </a>
-            <nav>
+            <nav aria-label="Main Navigation">
                 <ul>
                     <li><a href="resume.html">Resume</a></li>
-                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="projects.html" class="active" aria-current="page">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
         
-        <section class="page-title">
-            <h2>My Projects</h2>
-            <p>A showcase of personal and professional work across multiple domains.</p>
+        <!-- Main content -->
+        <main id="main-content">
+            <section class="page-title">
+                <h2>My Projects</h2>
+                <p>A showcase of personal and professional work across multiple domains.</p>
+                
+                <!-- Project filtering system -->
+                <div class="filter-container">
+                    <div class="filter-label">Filter by:</div>
+                    <div class="filter-buttons" role="tablist" aria-label="Project filters">
+                        <!-- Filter buttons will be dynamically generated with JavaScript -->
+                    </div>
+                </div>
+            </section>
             
-            <!-- Filter buttons -->
-            <div class="filter-container">
-                <div class="filter-label">Filter by:</div>
-                <div class="filter-buttons">
-                    <!-- Filter buttons will be dynamically generated -->
-                </div>
-            </div>
-        </section>
-        
-        <section class="projects-grid">
-            <!-- Project 1 -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="Images/OPGC.png" alt="Obscure Polearm Gaming Co.">
-                </div>
-                <div class="project-content">
-                    <h3>Obscure Polearm Gaming Co.</h3>
-                    <p>Specializing in high-quality, multipurpose, printable tabletop gaming products with bespoke graphic design. Intended to be printed at home, making it easy and convenient to get everything you need for your tabletop adventures.</p>
-                    <div class="project-tags" data-tags="Graphic Design,Tabletop Gaming,Brand/Marketing,Product Development">
-                        <span class="tag" data-tag="Graphic Design">Graphic Design</span>
-                        <span class="tag" data-tag="Tabletop Gaming">Tabletop Gaming</span>
-                        <span class="tag" data-tag="Brand/Marketing">Brand/Marketing</span>
-                        <span class="tag" data-tag="Product Development">Product Development</span>
-                    </div>
-                    <a href="https://obscurepolearmgaming.etsy.com" class="project-link" target="_blank">Visit Store →</a>
-                </div>
-            </div>
+            <!-- Announcement region for screen readers -->
+            <div id="filter-announcement" class="sr-only" aria-live="polite"></div>
             
-            <!-- Project 2 -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="Images/crypt.png" alt="Crypt of the First Homunculus">
-                </div>
-                <div class="project-content">
-                    <h3>Crypt of the First Homunculus</h3>
-                    <p>An original starter adventure module for Dungeons & Dragons featuring a mysterious disappearance and an attack on a remote town by monstrous creatures. Includes new monsters, unique challenges and compelling scenarios.</p>
-                    <div class="project-tags" data-tags="Graphic Design,Writing,Tabletop Gaming,Product Development">
-                        <span class="tag" data-tag="Writing">Writing</span>
-                         <span class="tag" data-tag="Graphic Design">Graphic Design</span>
-                         <span class="tag" data-tag="Tabletop Gaming">Tabletop Gaming</span>
-                         <span class="tag" data-tag="Product Development">Product Development</span>
+            <!-- Projects grid -->
+            <section class="projects-grid" aria-label="Projects">
+                <!-- Project 1: Obscure Polearm Gaming Co. -->
+                <article class="project-card" data-category="project">
+                    <div class="project-image">
+                        <img src="Images/OPGC.png" alt="Obscure Polearm Gaming Co. Logo and Products" width="400" height="400" loading="lazy">
                     </div>
-                    <a href="https://www.drivethrurpg.com/product/404922/Crypt-of-the-First-Homunculus-A-Starter-Adventure?affiliate_id=1970305" class="project-link" target="_blank">View on DriveThruRPG →</a>
-                </div>
-            </div>
-            
-            <!-- Project 3 -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="Images/Gridfinity.png" alt="Gridfinity Storage Solutions">
-                </div>
-                <div class="project-content">
-                    <h3>Gridfinity Board Game Trays</h3>
-                    <p> Created to solve a specific problem. These 3D-printable trays and holders that keep all your bits organized while gaming. Remixed from Voidstarlabs' Gridfinity.</p>
-                    <div class="project-tags" data-tags="3D Modeling,Tabletop Gaming">
-                        <span class="tag" data-tag="3D Modeling">3D Modeling</span>
-                        <span class="tag" data-tag="Tabletop Gaming">Tabletop Gaming</span>
+                    <div class="project-content">
+                        <h3>Obscure Polearm Gaming Co.</h3>
+                        <p>Specializing in high-quality, multipurpose, printable tabletop gaming products with bespoke graphic design. Intended to be printed at home, making it easy and convenient to get everything you need for your tabletop adventures.</p>
+                        <div class="project-tags" data-tags="Graphic Design,Tabletop Gaming,Brand/Marketing,Product Development">
+                            <span class="tag">Graphic Design</span>
+                            <span class="tag">Tabletop Gaming</span>
+                            <span class="tag">Brand/Marketing</span>
+                            <span class="tag">Product Development</span>
+                        </div>
+                        <a href="https://obscurepolearmgaming.etsy.com" class="project-link" target="_blank" rel="noopener" aria-label="Visit Obscure Polearm Gaming Co. Etsy Store">Visit Store →</a>
                     </div>
-                    <a href="https://makerworld.com/en/models/54505" class="project-link" target="_blank">View on Maker World →</a>
-                </div>
-            </div>
-            
-            <!-- Project 4 -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="Images/3DModeling.png" alt="Parametric CAD">
-                </div>
-                <div class="project-content">
-                    <h3>Parametric CAD</h3>
-                    <p>Parametric 3D models created using Onshape, a cloud-based CAD platform for collaborative mechanical design. Projects showcase parametric modeling skills with designs that can be accessed and edited from any device with an internet connection.</p>
-                    <div class="project-tags" data-tags="3D Modeling,Product Development">
-                        <span class="tag" data-tag="3D Modeling">3D Modeling</span>
-                        <span class="tag" data-tag="Product Development">Product Development</span>
+                </article>
+                
+                <!-- Project 2: Crypt of the First Homunculus -->
+                <article class="project-card" data-category="project">
+                    <div class="project-image">
+                        <img src="Images/crypt.png" alt="Crypt of the First Homunculus Adventure Module Cover" width="400" height="400" loading="lazy">
                     </div>
-                    <a href="https://cad.onshape.com/documents/58b22b199228f892da6d672c/w/ce9a4923f57b817f1d652315/e/23e933926462cf9dfb9d2386?renderMode=0&uiState=6553ee3414d3b36435b8d069" class="project-link" target="_blank">View Models →</a>
-                </div>
-            </div>
-            
-            <!-- Project 5 -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="Images/Trailers.webp" alt="Motion Picture Trailers and Advertising">
-                </div>
-                <div class="project-content">
-                    <h3>Motion Picture Trailers and Advertising</h3>
-                    <p>A non-comprehensive playlist of trailers, clips, and TV spots in my post-production management portfolio from Countdown Post.</p>
-                    <div class="project-tags" data-tags="Post-production ,Advertising,Project Management">
-                        <span class="tag" data-tag="Post-production">Post-production</span>
-                        <span class="tag" data-tag="Advertising">Advertising</span>
-                        <span class="tag" data-tag="Project Management">Project Management</span>
+                    <div class="project-content">
+                        <h3>Crypt of the First Homunculus</h3>
+                        <p>An original starter adventure module for Dungeons & Dragons featuring a mysterious disappearance and an attack on a remote town by monstrous creatures. Includes new monsters, unique challenges and compelling scenarios.</p>
+                        <div class="project-tags" data-tags="Graphic Design,Writing,Tabletop Gaming,Product Development">
+                            <span class="tag">Writing</span>
+                            <span class="tag">Graphic Design</span>
+                            <span class="tag">Tabletop Gaming</span>
+                            <span class="tag">Product Development</span>
+                        </div>
+                        <a href="https://www.drivethrurpg.com/product/404922/Crypt-of-the-First-Homunculus-A-Starter-Adventure?affiliate_id=1970305" class="project-link" target="_blank" rel="noopener" aria-label="View Crypt of the First Homunculus on DriveThruRPG">View on DriveThruRPG →</a>
                     </div>
-                    <a href="https://youtube.com/playlist?list=PLI-cSaXx-4BKpWNtVe9NAHYSKIJ7e6xWQ&si=87fUbj2xWQN8XTji" class="project-link" target="_blank">Watch on YouTube →</a>
-                </div>
-            </div>
-                        <!-- Project 6 -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="Images/IMDB.png" alt="IMDB">
-                </div>
-                <div class="project-content">
-                    <h3>IMDB Credits</h3>
-                    <p>A list of Film and Television credits as both a Post-production Producer and Audio Editor.</p>
-                    <div class="project-tags" data-tags="Post-production,Project Management">
-                        <span class="tag" data-tag="Post-production">Post-production</span>
-                        <span class="tag" data-tag="Project Management">Project Management</span>
+                </article>
+                
+                <!-- Project 3: Gridfinity Board Game Trays -->
+                <article class="project-card" data-category="project">
+                    <div class="project-image">
+                        <img src="Images/Gridfinity.png" alt="Gridfinity Board Game Storage Trays" width="400" height="400" loading="lazy">
                     </div>
-                    <a href="https://youtube.com/playlist?list=PLI-cSaXx-4BKpWNtVe9NAHYSKIJ7e6xWQ&si=87fUbj2xWQN8XTji" class="project-link" target="_blank">View on IMDB →</a>
-                </div>
-            </div>
+                    <div class="project-content">
+                        <h3>Gridfinity Board Game Trays</h3>
+                        <p>Created to solve a specific problem. These 3D-printable trays and holders keep all your bits organized while gaming. Remixed from Voidstarlabs' Gridfinity.</p>
+                        <div class="project-tags" data-tags="3D Modeling,Tabletop Gaming">
+                            <span class="tag">3D Modeling</span>
+                            <span class="tag">Tabletop Gaming</span>
+                        </div>
+                        <a href="https://makerworld.com/en/models/54505" class="project-link" target="_blank" rel="noopener" aria-label="View Gridfinity Board Game Trays on Maker World">View on Maker World →</a>
+                    </div>
+                </article>
+                
+                <!-- Project 4: Parametric CAD -->
+                <article class="project-card" data-category="project">
+                    <div class="project-image">
+                        <img src="Images/3DModeling.png" alt="Parametric CAD 3D Models" width="400" height="400" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Parametric CAD</h3>
+                        <p>Parametric 3D models created using Onshape, a cloud-based CAD platform for collaborative mechanical design. Projects showcase parametric modeling skills with designs that can be accessed and edited from any device with an internet connection.</p>
+                        <div class="project-tags" data-tags="3D Modeling,Product Development">
+                            <span class="tag">3D Modeling</span>
+                            <span class="tag">Product Development</span>
+                        </div>
+                        <a href="https://cad.onshape.com/documents/58b22b199228f892da6d672c/w/ce9a4923f57b817f1d652315/e/23e933926462cf9dfb9d2386?renderMode=0&uiState=6553ee3414d3b36435b8d069" class="project-link" target="_blank" rel="noopener" aria-label="View Parametric CAD Models on Onshape">View Models →</a>
+                    </div>
+                </article>
+                
+                <!-- Project 5: Motion Picture Trailers -->
+                <article class="project-card" data-category="project">
+                    <div class="project-image">
+                        <img src="Images/Trailers.webp" alt="Motion Picture Trailers and Advertising" width="400" height="400" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Motion Picture Trailers and Advertising</h3>
+                        <p>A non-comprehensive playlist of trailers, clips, and TV spots in my post-production management portfolio from Countdown Post.</p>
+                        <div class="project-tags" data-tags="Post-production,Advertising,Project Management">
+                            <span class="tag">Post-production</span>
+                            <span class="tag">Advertising</span>
+                            <span class="tag">Project Management</span>
+                        </div>
+                        <a href="https://youtube.com/playlist?list=PLI-cSaXx-4BKpWNtVe9NAHYSKIJ7e6xWQ&si=87fUbj2xWQN8XTji" class="project-link" target="_blank" rel="noopener" aria-label="Watch Motion Picture Trailers on YouTube">Watch on YouTube →</a>
+                    </div>
+                </article>
+                
+                <!-- Project 6: IMDB Credits -->
+                <article class="project-card" data-category="Project">
+                    <div class="project-image">
+                        <img src="Images/IMDB.png" alt="IMDB Credits and Profile" width="400" height="400" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>IMDB Credits</h3>
+                        <p>A list of Film and Television credits as both a Post-production Producer and Audio Editor.</p>
+                        <div class="project-tags" data-tags="Post-production,Project Management">
+                            <span class="tag">Post-production</span>
+                            <span class="tag">Project Management</span>
+                        </div>
+                        <a href="https://www.imdb.com/name/nm6343339/" class="project-link" target="_blank" rel="noopener" aria-label="View Kevin McSharry's profile on IMDB">View on IMDB →</a>
+                    </div>
+                </article>
 
-                          <!-- Project 7 -->
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="Images/Linkedin.png" alt="Linkedin">
-                </div>
-                <div class="project-content">
-                    <h3>Linkedin</h3>
-                    <p>My full work history on Linkedin, including as a Producer, Project Manager, and Business Analyst.</p>
-                    <div class="project-tags" data-tags="Post-production,Project Management">
-                        <span class="tag" data-tag="Post-production">Post-production</span>
-                        <span class="tag" data-tag="Project Management">Project Management</span>
+                <!-- Project 7: LinkedIn -->
+                <article class="project-card" data-category="project">
+                    <div class="project-image">
+                        <img src="Images/Linkedin.png" alt="LinkedIn Profile" width="400" height="400" loading="lazy">
                     </div>
-                    <a href="https://youtube.com/playlist?list=PLI-cSaXx-4BKpWNtVe9NAHYSKIJ7e6xWQ&si=87fUbj2xWQN8XTji" class="project-link" target="_blank">View on IMDB →</a>
-                </div>
-            </div>
-
-
-            <!-- Additional Projects can be uncommented when needed -->
-            <!--
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="/api/placeholder/400/200" alt="Project 6">
-                </div>
-                <div class="project-content">
-                    <h3>Additional Project</h3>
-                    <p>Space for a future project or additional work you'd like to showcase.</p>
-                    <div class="project-tags" data-tags="Project Management,Design">
-                        <span class="tag" data-tag="Project Management">Project Management</span>
-                        <span class="tag" data-tag="Design">Design</span>
+                    <div class="project-content">
+                        <h3>LinkedIn</h3>
+                        <p>My full work history on LinkedIn, including as a Producer, Project Manager, and Business Analyst.</p>
+                        <div class="project-tags" data-tags="Post-production,Project Management">
+                            <span class="tag">Post-production</span>
+                            <span class="tag">Project Management</span>
+                        </div>
+                        <a href="https://www.linkedin.com/in/kevinmcsharry" class="project-link" target="_blank" rel="noopener" aria-label="View Kevin McSharry's profile on LinkedIn">View on LinkedIn →</a>
                     </div>
-                    <a href="#" class="project-link">Coming Soon →</a>
-                </div>
-            </div>
-            -->
-        </section>
+                </article>
+
+                <!-- Project 8: Portfolio Website -->
+                <article class="project-card" data-category="project">
+                    <div class="project-image">
+                        <img src="Images/github.png" alt="Portfolio Website GitHub Repository" width="400" height="400" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Website Development</h3>
+                        <p>The repository for the website you are reading this on right now. A responsive, accessible portfolio built with semantic HTML5, CSS3, and vanilla JavaScript. Features include interactive project filtering, animated UI elements, and optimized performance across all devices.</p>
+                        <div class="project-tags" data-tags="Graphic Design,Web Development,HTML/CSS">
+                            <span class="tag">Graphic Design</span>
+                            <span class="tag">Web Development</span>
+                            <span class="tag">HTML/CSS</span>
+                        </div>
+                        <a href="https://github.com/Soundlvl/Soundlvl.github.io" class="project-link" target="_blank" rel="noopener" aria-label="View Portfolio Website Source Code on GitHub">View on GitHub →</a>
+                    </div>
+                </article>
+            </section>
+        </main>
     </div>
     
+    <!-- Footer with contact information -->
     <footer>
-    <div class="footer-content">
-        <div class="contact-group">
-            <h4>Phone</h4>
-            <p>(508) 259-5862</p>
-        </div>
-        
-        <div class="contact-group">
-            <h4>Email</h4>
-            <p>Hello@KevinMcSharry.com</p>
-        </div>
-        
-        <div class="social">
-            <h4>My Work</h4>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/kevinmcsharry" target="_blank" class="linkedin">in</a>
-                <a href="https://www.imdb.com/name/nm6343339/" target="_blank" class="imdb">IMDb</a>
+        <div class="footer-content">
+            <div class="contact-group">
+                <h4>Phone</h4>
+                <p><a href="tel:5082595862" aria-label="Call Kevin McSharry">(508) 259-5862</a></p>
+            </div>
+            
+            <div class="contact-group">
+                <h4>Email</h4>
+                <p><a href="mailto:Hello@KevinMcSharry.com" aria-label="Email Kevin McSharry">Hello@KevinMcSharry.com</a></p>
+            </div>
+            
+            <div class="social">
+                <h4>My Work</h4>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kevinmcsharry" target="_blank" rel="noopener" class="linkedin" aria-label="LinkedIn Profile">in</a>
+                    <a href="https://www.imdb.com/name/nm6343339/" target="_blank" rel="noopener" class="imdb" aria-label="IMDb Profile">IMDb</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© <span id="current-year">2025</span> Kevin McSharry</p>
             </div>
         </div>
-        
-        <div class="copyright">
-            <p>© 2025 Kevin McSharry</p>
-        </div>
-    </div>
-</footer>
+    </footer>
 
-    <script src="scripts.js"></script>
+    <script src="scripts.js" defer></script>
 </body>
 </html>

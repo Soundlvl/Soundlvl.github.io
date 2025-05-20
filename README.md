@@ -1,80 +1,176 @@
 # Kevin McSharry Portfolio Website
 
+![Portfolio Screenshot](Images/screenshot.png)
+
 ## Overview
-This repository contains the source code for Kevin McSharry's personal portfolio website. The site showcases Kevin's professional work, skills, and services as a Project Manager, Business Analyst, Producer, and Designer.
+
+A modern, responsive, and accessible portfolio website for Kevin McSharry, showcasing his work as a Project Manager, Producer, and Designer. The site features a clean, professional design with interactive project filtering, animations, and optimized performance.
+
+- **Live Site:** [kevinmcsharry.com](https://kevinmcsharry.com)
+- **Repository:** [github.com/Soundlvl/Soundlvl.github.io](https://github.com/Soundlvl/Soundlvl.github.io)
 
 ## Features
-- Responsive design that works on all devices
-- Project showcase with filterable categories
-- Interactive resume with embedded PDF and credentials
-- Contact information and consulting services details
 
-## Structure
-The website is organized into the following files:
+- **Responsive Design** - Optimized for all device sizes from mobile to desktop
+- **Interactive Project Filtering** - Dynamic filtering system for portfolio projects
+- **Accessibility Compliant** - WCAG standards with keyboard navigation and screen reader support
+- **Animated UI Elements** - Subtle animations enhance user experience
+- **Optimized Performance** - Fast loading with image optimizations and efficient code
+- **Print-Friendly** - Special styles for printing pages
+- **SEO Ready** - Structured data and semantic markup for better search engine visibility
 
-- **index.html** - Home page with introduction and navigation to other sections
-- **projects.html** - Showcase of professional work with filterable categories
-- **resume.html** - Professional resume and credentials
-- **contact.html** - Contact information and consulting services
-- **style.css** - Main stylesheet for the entire website
-- **scripts.js** - JavaScript functionality for filtering and interactivity
-- **Images/** - Directory containing all website images
+## Technology Stack
 
-## Technologies Used
-- HTML5
-- CSS3
-- JavaScript (vanilla/no frameworks)
-- Google Drive (for resume embedding)
-- Credly (for certification badges)
+- **HTML5** - Semantic markup for better accessibility and SEO
+- **CSS3** - Custom variables, flexible layouts with CSS Grid and Flexbox
+- **JavaScript** - Vanilla JS for interactive elements (no frameworks)
+- **Google Drive** - For PDF resume embedding
+- **Schema.org** - Structured data for improved SEO
 
-## Setup Instructions
-1. Clone this repository to your local machine or web server
-2. Ensure all files maintain their relative structure
-3. Replace images in the `Images` folder with your actual images
-4. Update the resume Google Drive link in resume.html with your own document ID
-5. Test the website locally before deploying
+## Directory Structure
 
-## Adding New Projects
-To add a new project to the projects page:
-1. Copy an existing project card in projects.html
-2. Update the image, title, description, and link information
-3. Update the project tags with relevant categories
-4. The filtering system will automatically include any new tags
+```
+root/
+│
+├── index.html              # Home page
+├── projects.html           # Portfolio/project showcase
+├── resume.html             # Professional resume page
+├── contact.html            # Contact information and services
+├── style.css               # Main stylesheet
+├── scripts.js              # JavaScript functionality
+│
+└── Images/                 # Website images
+    ├── Headshot.jpg        # Profile picture
+    ├── OPGC.png            # Project images
+    ├── crypt.png
+    ├── Gridfinity.png
+    ├── 3DModeling.png
+    ├── Trailers.webp
+    ├── IMDB.png
+    ├── Linkedin.png
+    ├── github.png
+    ├── pmp.png             # Certification badge
+    ├── favicon.png         # Website favicon
+    └── screenshot.png      # Website screenshot for README
+```
 
-Example project card structure:
+## Customization Guide
+
+### Changing Colors and Theme
+
+The site uses CSS variables for easy customization. In `style.css`, modify the `:root` section:
+
+```css
+:root {
+    --primary: #303030;         /* Main background color */
+    --color1: #aa7daf;          /* Purple accent */
+    --color2: #E9BC4F;          /* Yellow accent */
+    --color3: #56B9BF;          /* Teal accent */
+    --text-color: #ffffff;      /* Main text color */
+    /* Other variables */
+}
+```
+
+### Adding New Projects
+
+1. Add a new project card to the `projects-grid` section in `projects.html`:
+
 ```html
-<div class="project-card">
+<article class="project-card" data-category="project">
     <div class="project-image">
-        <img src="Images/your-image.png" alt="Project Title">
+        <img src="Images/your-image.png" alt="Project description" width="400" height="400" loading="lazy">
     </div>
     <div class="project-content">
         <h3>Project Title</h3>
         <p>Project description goes here...</p>
-        <div class="project-tags" data-tags="Tag1,Tag2">
-            <span class="tag" data-tag="Tag1">Tag1</span>
-            <span class="tag" data-tag="Tag2">Tag2</span>
+        <div class="project-tags" data-tags="Tag1,Tag2,Tag3">
+            <span class="tag">Tag1</span>
+            <span class="tag">Tag2</span>
+            <span class="tag">Tag3</span>
         </div>
-        <a href="https://your-link.com" class="project-link" target="_blank">Link Text →</a>
+        <a href="https://project-url.com" class="project-link" target="_blank" rel="noopener">View Project →</a>
     </div>
-</div>
+</article>
 ```
 
-## Customization
-- Colors can be changed by editing the CSS variables at the top of style.css
-- Content can be updated by editing the HTML files
-- Additional pages can be added by following the same structure and linking them in the navigation
+2. Make sure to add appropriate tags in the `data-tags` attribute and as individual `<span class="tag">` elements.
+
+### Adding New Project Categories
+
+The project filtering system automatically detects all unique tags from your projects. Simply add new tags to the `data-tags` attribute in your project cards, and the filter system will include them.
+
+## Development
+
+### Modifying CSS
+
+The CSS is organized into sections for easier maintenance:
+
+1. Variables and Root Setup
+2. Base styles and resets
+3. Layout components
+4. Header styles
+5. Hero section
+6. Project filtering system
+7. Projects grid and cards
+8. Resume page styles
+9. Contact page styles
+10. Footer styles
+11. Animations
+12. Media queries
+13. Utility classes
+14. Print styles and reduced motion
+
+Comments in the code help identify these sections.
+
+### JavaScript Features
+
+The JavaScript functionality is organized into several main functions:
+
+- `initProjectFilter()` - Sets up project filtering system
+- `initSmoothScroll()` - Enables smooth scrolling for anchor links
+- `updateCopyrightYear()` - Dynamically updates copyright year
+- `enhanceAccessibility()` - Adds various accessibility improvements
+
+## Accessibility Features
+
+- Semantic HTML structure
+- ARIA labels and landmarks
+- Keyboard navigation support
+- Focus management
+- Screen reader announcements
+- Skip to content link
+- Sufficient color contrast
+- Reduced motion preference support
+- Alternative text for images
+
+## Performance Optimizations
+
+- CSS containment
+- Image lazy loading
+- Deferred script loading
+- Hardware-accelerated animations
+- Event delegation for efficient event handling
+- Optimized asset sizes
+- Efficient DOM manipulation
+- Print styles for paper-friendly output
 
 ## Browser Compatibility
-This website is designed to work on all modern browsers including:
-- Chrome
-- Firefox
-- Safari
-- Edge
+
+The website is tested and compatible with:
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Android Chrome)
 
 ## License
-All rights reserved. This code is not open-source and is intended for personal use only.
+
+This project is available for use as a template for your own portfolio.
 
 ## Contact
-For questions or issues regarding this website, please contact:
-- Email: Kevin@KevinMcSharry.com
-- Phone: (508) 259-5862
+
+For inquiries about this website or to discuss your own web project, contact:
+
+- Email: Hello@KevinMcSharry.com
+- LinkedIn: [linkedin.com/in/kevinmcsharry](https://www.linkedin.com/in/kevinmcsharry)

@@ -3,97 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kevin McSharry's professional resume - Project Manager, Producer, and Designer with PMP certification and extensive experience in media production.">
+    <meta name="keywords" content="Kevin McSharry, Resume, Project Manager, Producer, PMP, Portfolio">
+    
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="Kevin McSharry - Resume">
+    <meta property="og:description" content="Professional resume of Kevin McSharry - Project Manager, Producer, and Designer with PMP certification.">
+    <meta property="og:image" content="Images/pmp.png">
+    <meta property="og:url" content="https://kevinmcsharry.com/resume.html">
+    
     <title>Kevin McSharry - Resume</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://kevinmcsharry.com/resume.html">
+    <link rel="icon" type="image/png" href="Images/favicon.png">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="Images/pmp.png" as="image">
 </head>
 <body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Animated Background Elements -->
+    <div class="background-elements" aria-hidden="true">
+        <div class="bg-shape shape1"></div>
+        <div class="bg-shape shape2"></div>
+        <div class="bg-shape shape3"></div>
+        <div class="bg-shape shape4"></div>
+        <div class="bg-shape shape5"></div>
+    </div>
+
     <div class="container">
+        <!-- Header with navigation -->
         <header>
-            <a href="index.html" class="logo">
-                <div class="logo-circle"></div>
+            <a href="index.html" class="logo" aria-label="Kevin McSharry Home">
+                <div class="logo-circle" aria-hidden="true"></div>
                 <h1>Kevin McSharry <span class="job-title">Project Manager | Producer | Designer</span></h1>
             </a>
-            <nav>
+            <nav aria-label="Main Navigation">
                 <ul>
-                    <li><a href="resume.html" class="active">Resume</a></li>
+                    <li><a href="resume.html" class="active" aria-current="page">Resume</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+        </header>
 
-    </div>
-        <section class="page-title">
-            <h2> Resume</h2>
-            <p>A results-driven Producer, Project Manager, and Business Analyst with PMP certification and extensive experience in media production, workflow optimization, and technical solution implementation. I combine analytical thinking with creative vision to transform ideas into impactful realities across industries.</p>
-        </section>
-        
-        <section class="resume-container">
-            <iframe 
-                src="https://drive.google.com/file/d/1YbMIkF999MpueRdJm0beaEcDn3ZQ894X/preview" 
-                class="resume-embed" 
-                frameborder="0" 
-                allowfullscreen="true" 
-                mozallowfullscreen="true" 
-                webkitallowfullscreen="true">
-            </iframe>
+        <!-- Main content -->
+        <main id="main-content">
+            <section class="page-title">
+                <h2>Resume</h2>
+                <p>A results-driven Producer, Project Manager, and Business Analyst with PMP certification and extensive experience in media production, workflow optimization, and technical solution implementation. I combine analytical thinking with creative vision to transform ideas into impactful realities across industries.</p>
+            </section>
             
-            <div class="resume-actions">
-                <a href="https://drive.google.com/uc?export=download&id=1YbMIkF999MpueRdJm0beaEcDn3ZQ894X" class="resume-btn download" target="_blank">Download PDF</a>
-            </div>
-        </section>
-        
-        <!-- Credly Badge Section -->
-      <section class="credentials-section">
-    <h3>Certifications & Credentials</h3>
-    <div class="credentials-container">
-        <a href="https://www.credly.com/badges/62c89fa6-9ba5-4d7d-8980-ff12cf2638d8/public_url" target="_blank" class="credential-link">
-            <img src="Images/pmp.png" alt="Project Management Professional (PMP) Certification" class="credential-badge">
-        </a>
-    </div>
-        </section>
-        
-        <!--
-        <section class="resume-update-info">
-            <h3>How to Update Your Resume</h3>
-            <p>This resume page uses an embedded Google Docs document, making it easy to update without changing the website code. Follow these steps to set up and update your resume:</p>
-            <ul>
-                <li>Create or upload your resume to Google Drive</li>
-                <li>Set the document's sharing settings to "Anyone with the link can view"</li>
-                <li>From the File menu, select "Publish to the web"</li>
-                <li>Copy the document ID from the URL (the long string between /d/ and /edit)</li>
-                <li>Replace <code>YOUR_RESUME_DOCUMENT_ID</code> in the iframe src, Edit Resume link, and Download PDF link with your document ID</li>
-            </ul>
-            <p>Once set up, you can update your resume simply by editing the Google Doc - changes will automatically appear on your website!</p>
-        </section>
-        -->
+            <!-- Resume PDF viewer -->
+            <section class="resume-container">
+                <div class="resume-wrapper">
+                    <iframe 
+                        src="https://drive.google.com/file/d/1YbMIkF999MpueRdJm0beaEcDn3ZQ894X/preview" 
+                        class="resume-embed" 
+                        title="Kevin McSharry Resume PDF"
+                        loading="lazy"
+                        allowfullscreen="true" 
+                        mozallowfullscreen="true" 
+                        webkitallowfullscreen="true">
+                    </iframe>
+                </div>
+                
+                <div class="resume-actions">
+                    <a href="https://drive.google.com/uc?export=download&id=1YbMIkF999MpueRdJm0beaEcDn3ZQ894X" class="resume-btn download">Download PDF</a>
+                </div>
+            </section>
+            
+            <!-- Certifications section -->
+            <section class="credentials-section">
+                <h3>Certifications & Credentials</h3>
+                <div class="credentials-container">
+                    <a href="https://www.credly.com/badges/62c89fa6-9ba5-4d7d-8980-ff12cf2638d8/public_url" target="_blank" rel="noopener" class="credential-link">
+                        <img src="Images/pmp.png" alt="Project Management Professional (PMP) Certification" class="credential-badge" width="400" height="400" loading="lazy">
+                    </a>
+                </div>
+            </section>
+        </main>
     </div>
     
+    <!-- Footer with contact information -->
     <footer>
-    <div class="footer-content">
-        <div class="contact-group">
-            <h4>Phone</h4>
-            <p>(508) 259-5862</p>
-        </div>
-        
-        <div class="contact-group">
-            <h4>Email</h4>
-            <p>Hello@KevinMcSharry.com</p>
-        </div>
-        
-        <div class="social">
-            <h4>My Work</h4>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/kevinmcsharry" target="_blank" class="linkedin">in</a>
-                <a href="https://www.imdb.com/name/nm6343339/" target="_blank" class="imdb">IMDb</a>
+        <div class="footer-content">
+            <div class="contact-group">
+                <h4>Phone</h4>
+                <p><a href="tel:5082595862" aria-label="Call Kevin McSharry">(508) 259-5862</a></p>
+            </div>
+            
+            <div class="contact-group">
+                <h4>Email</h4>
+                <p><a href="mailto:Hello@KevinMcSharry.com" aria-label="Email Kevin McSharry">Hello@KevinMcSharry.com</a></p>
+            </div>
+            
+            <div class="social">
+                <h4>My Work</h4>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kevinmcsharry" target="_blank" rel="noopener" class="linkedin" aria-label="LinkedIn Profile">in</a>
+                    <a href="https://www.imdb.com/name/nm6343339/" target="_blank" rel="noopener" class="imdb" aria-label="IMDb Profile">IMDb</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© <span id="current-year">2025</span> Kevin McSharry</p>
             </div>
         </div>
-        
-        <div class="copyright">
-            <p>© 2025 Kevin McSharry</p>
-        </div>
-    </div>
-</footer>
+    </footer>
 
-    <script src="scripts.js"></script>
+    <script src="scripts.js" defer></script>
 </body>
 </html>

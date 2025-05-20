@@ -3,17 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin McSharry - Project Manager | Creative and Post Producer | Designer</title>
+    <meta name="description" content="Kevin McSharry - Project Manager, Producer, and Designer with expertise in post-production, business analysis, and creative direction.">
+    <meta name="keywords" content="Kevin McSharry, Project Manager, Producer, Designer, PMP, Los Angeles, Post-production">
+    
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="Kevin McSharry - Project Manager | Producer | Designer">
+    <meta property="og:description" content="A versatile professional with expertise spanning project management, business analysis, producing, and design.">
+    <meta property="og:image" content="Images/Headshot.jpg">
+    <meta property="og:url" content="https://kevinmcsharry.com">
+    <meta property="og:type" content="website">
+    
+    <title>Kevin McSharry - Project Manager | Producer | Designer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://kevinmcsharry.com">
+    <link rel="icon" type="image/png" href="Images/favicon.png">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="Images/Headshot.jpg" as="image">
 </head>
 <body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Animated Background Elements -->
+    <div class="background-elements" aria-hidden="true">
+        <div class="bg-shape shape1"></div>
+        <div class="bg-shape shape2"></div>
+        <div class="bg-shape shape3"></div>
+        <div class="bg-shape shape4"></div>
+        <div class="bg-shape shape5"></div>
+    </div>
+
     <div class="container">
+        <!-- Header with navigation -->
         <header>
-            <a href="index.html" class="logo">
-                <div class="logo-circle"></div>
+            <a href="index.html" class="logo" aria-label="Kevin McSharry Home">
+                <div class="logo-circle" aria-hidden="true"></div>
                 <h1>Kevin McSharry <span class="job-title">Project Manager | Producer | Designer</span></h1>
             </a>
-            <nav>
+            <nav aria-label="Main Navigation">
                 <ul>
                     <li><a href="resume.html">Resume</a></li>
                     <li><a href="projects.html">Projects</a></li>
@@ -22,49 +50,80 @@
             </nav>
         </header>
         
-        <section class="hero">
-            <div class="profile-image">
-                <img src="Images/Headshot.jpg" alt="Kevin McSharry">
-            </div>
-            <div class="hero-content">
-                <h2>Hello</h2>
-                <h3>A Bit About Me</h3>
-                <p>I'm a versatile professional with expertise spanning project management, business analysis, producing, and design. I combine analytical thinking with creative vision to deliver exceptional results across industries. With a passion for leading teams and driving projects to success, I help organizations transform ideas into impactful realities.</p>
-                <div class="buttons">
-                    <a href="resume.html" class="btn btn-resume">Resume</a>
-                    <a href="projects.html" class="btn btn-projects">Projects</a>
-                    <a href="contact.html" class="btn btn-contact">Contact</a>
+        <!-- Main content -->
+        <main id="main-content">
+            <section class="hero">
+                <div class="profile-wrapper">
+                    <div class="profile-image">
+                        <img src="Images/Headshot.jpg" alt="Kevin McSharry" width="320" height="320">
+                    </div>
                 </div>
-            </div>
-        </section>
+                <div class="hero-content">
+                    <h2>Hello</h2>
+                    <h3>A Bit About Me</h3>
+                    <p>I'm a versatile professional with expertise spanning project management, business analysis, producing, and design. I combine analytical thinking with creative vision to deliver exceptional results across industries. With a passion for leading teams and driving projects to success, I help organizations transform ideas into impactful realities.</p>
+                    <div class="buttons">
+                        <a href="resume.html" class="btn btn-resume" aria-label="View my resume">Resume</a>
+                        <a href="projects.html" class="btn btn-projects" aria-label="View my projects">Projects</a>
+                        <a href="contact.html" class="btn btn-contact" aria-label="Contact me">Contact</a>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
     
+    <!-- Footer with contact information -->
     <footer>
-    <div class="footer-content">
-        <div class="contact-group">
-            <h4>Phone</h4>
-            <p>(508) 259-5862</p>
-        </div>
-        
-        <div class="contact-group">
-            <h4>Email</h4>
-            <p>Hello@KevinMcSharry.com</p>
-        </div>
-        
-        <div class="social">
-            <h4>My Work</h4>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/kevinmcsharry" target="_blank" class="linkedin">in</a>
-                <a href="https://www.imdb.com/name/nm6343339/" target="_blank" class="imdb">IMDb</a>
+        <div class="footer-content">
+            <div class="contact-group">
+                <h4>Phone</h4>
+                <p><a href="tel:5082595862" aria-label="Call Kevin McSharry">(508) 259-5862</a></p>
+            </div>
+            
+            <div class="contact-group">
+                <h4>Email</h4>
+                <p><a href="mailto:Hello@KevinMcSharry.com" aria-label="Email Kevin McSharry">Hello@KevinMcSharry.com</a></p>
+            </div>
+            
+            <div class="social">
+                <h4>My Work</h4>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/kevinmcsharry" target="_blank" rel="noopener" class="linkedin" aria-label="LinkedIn Profile">in</a>
+                    <a href="https://www.imdb.com/name/nm6343339/" target="_blank" rel="noopener" class="imdb" aria-label="IMDb Profile">IMDb</a>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© <span id="current-year">2025</span> Kevin McSharry</p>
             </div>
         </div>
-        
-        <div class="copyright">
-            <p>© 2025 Kevin McSharry</p>
-        </div>
-    </div>
-</footer>
+    </footer>
 
-    <script src="scripts.js"></script>
+    <!-- Structured data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Kevin McSharry",
+        "url": "https://kevinmcsharry.com",
+        "image": "https://kevinmcsharry.com/Images/Headshot.jpg",
+        "jobTitle": "Project Manager | Producer | Designer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Self-employed"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Los Angeles",
+            "addressRegion": "CA"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/kevinmcsharry",
+            "https://www.imdb.com/name/nm6343339/"
+        ]
+    }
+    </script>
+
+    <script src="scripts.js" defer></script>
 </body>
 </html>
