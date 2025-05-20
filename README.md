@@ -1,6 +1,6 @@
 # Kevin McSharry Portfolio Website
 
-![Portfolio Screenshot](Images/screenshot.png)
+![Portfolio Screenshot](Images/Screenshot.png)
 
 ## Overview
 
