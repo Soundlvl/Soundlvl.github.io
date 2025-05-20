@@ -167,10 +167,3 @@ The website is tested and compatible with:
 ## License
 
 This project is available for use as a template for your own portfolio.
-
-## Contact
-
-For inquiries about this website or to discuss your own web project, contact:
-
-- Email: Hello@KevinMcSharry.com
-- LinkedIn: [linkedin.com/in/kevinmcsharry](https://www.linkedin.com/in/kevinmcsharry)
