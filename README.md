@@ -41,9 +41,9 @@ root/
 │
 └── Images/                 # Website images
     ├── Headshot.jpg        # Profile picture
-    ├── project_image_1.png            # Project images
-    ├── project_image_2.png
-    ├── project_image_3.png
+    ├── image_1.png         # Project images
+    ├── image_2.png
+    ├── image_3.png
     └── screenshot.png      # Website screenshot for README
 ```
 
