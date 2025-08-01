@@ -13,7 +13,7 @@ A modern, responsive, and accessible portfolio website for Kevin McSharry, showc
 
 - **Responsive Design** - Optimized for all device sizes from mobile to desktop
 - **Interactive Project Filtering** - Dynamic filtering system for portfolio projects
-- **Accessibility Compliant** - WCAG 2.11 AA compliant with keyboard navigation, screen reader support, and sufficient contrast throughout
+- **Accessibility Compliant** - WCAG 2.11 AAA compliant with keyboard navigation, screen reader support, and sufficient contrast throughout
 - **Animated UI Elements** - Subtle animations enhance user experience
 - **Optimized Performance** - Fast loading with image optimizations and efficient code
 - **SEO Ready** - Structured data and semantic markup for better search engine visibility
@@ -32,6 +32,7 @@ A modern, responsive, and accessible portfolio website for Kevin McSharry, showc
 root/
 │
 ├── index.html              # Home page
+|── about.html              # About me page
 ├── projects.html           # Portfolio/project showcase
 ├── resume.html             # Professional resume page
 ├── contact.html            # Contact information and services
@@ -61,12 +62,12 @@ The site uses CSS variables for easy customization. In `style.css`, modify the `
 ```css
 :root {
     --primary: #303030;
-    --color1: #bc8ec1;  /* Purple accent for text*/
-    --color1-dark: #8f5e94; /* Purple accent for backgrounds*/
-    --color2: #E9BC4F;  /* Yellow accent for text */
-    --color2-dark: #cd9c33; /* Yellow accent for backgrounds */
-    --color3: #56B9BF;  /* Teal accent for text */
-    --color3-dark: #2a8085; /* Teal accent for backgrounds */
+    --color1: #E5AEEA;  /* Purple accent for text */
+    --color1-dark: #8f5e94; /* Dark Purple accent for backgrounds*/
+    --color2: #E9BC4F;  /* Yellow accent for text*/
+    --color2-dark: #c39532; /* Dark Yellow accent for backgrounds */
+    --color3: #56B9BF;  /* Teal accent for text*/
+    --color3-dark: #2a8085; /* Dark Teal accent for backgrounds */
     --text-color: #ffffff;
     /* Other variables */
 }
@@ -115,11 +116,12 @@ The CSS is organized into sections for easier maintenance:
 7. Projects grid and cards
 8. Resume page styles
 9. Contact page styles
-10. Footer styles
-11. Animations
-12. Media queries
-13. Utility classes
-14. Print styles and reduced motion
+10. About page styles
+11. Footer styles
+12. Animations
+13. Media queries
+14. Utility classes
+15. Print styles and reduced motion
 
 Comments in the code help identify these sections.
 
@@ -152,12 +154,11 @@ The JavaScript functionality is organized into several main functions:
 - Hardware-accelerated animations
 - Event delegation for efficient event handling
 - Optimized asset sizes
-- Efficient DOM manipulation
 - Print styles for paper-friendly output
 
 ## Browser Compatibility
 
-The website is tested and compatible with:
+The website uses standard features and is compatible with:
 
 - Chrome (latest)
 - Firefox (latest)
@@ -167,4 +168,5 @@ The website is tested and compatible with:
 
 ## License
 
-This project is available for use as a template for your own portfolio.
+Website Code: MIT License, Copyright (c) 2025 Kevin McSharry
+Website Content and Media: CC BY-NC 4.0
