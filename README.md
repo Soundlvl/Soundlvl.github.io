@@ -41,15 +41,9 @@ root/
 │
 └── Images/                 # Website images
     ├── Headshot.jpg        # Profile picture
-    ├── OPGC.png            # Project images
-    ├── crypt.png
-    ├── Gridfinity.png
-    ├── 3DModeling.png
-    ├── Trailers.webp
-    ├── IMDB.png
-    ├── Linkedin.png
-    ├── Github.png
-    ├── pmp.png             # Certification badge
+    ├── project_image_1.png            # Project images
+    ├── project_image_2.png
+    ├── project_image_3.png
     └── screenshot.png      # Website screenshot for README
 ```
 
